@@ -19,7 +19,7 @@ const Resource = require('./resource');
 const Identity = require('./identity');
 const Wallet = require('./wallet');
 const Component = require('./component');
-const Package = require(`${__dirname}/package`);
+// const Package = require(`${__dirname}/package`);
 
 // TODO: move component imports to components/ or scripts/
 const Introduction = require('../components/introduction');
@@ -58,7 +58,8 @@ class App extends Component {
       resources: {},
       peers: {},
       port: HTTP_SERVER_PORT,
-      version: Package.version
+      // version: Package.version
+      version: '0.1.0-dev'
     }, settings);
 
     this.menu = new Menu();
