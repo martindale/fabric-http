@@ -7,7 +7,7 @@
     "build:docs": "jsdoc -c jsdoc.json types components/*.js types/*.js settings/deprecations.js README.md -d docs",
     "build:coverage": "npm run coverage && nyc report --reporter=html",
     "build:fast": "node examples/build.js && npm run build:scripts",
-    "build:scripts": "webpack scripts/index.js",
+    "build:scripts": "webpack index.js",
     "compile": "node examples/build.js && npm run build:scripts",
     "coverage": "nyc npm run test",
     "docs": "npm run build:docs && ecstatic docs",
